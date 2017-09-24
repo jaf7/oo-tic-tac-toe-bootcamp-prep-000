@@ -31,4 +31,8 @@ class TicTacToe
     @board[index] = char
   end
 
+  def position_taken?(index)
+    !(@board[index].nil? || @board[index] == " ") # NilClass public instance method, nil? -> true
+  end
+
 end
