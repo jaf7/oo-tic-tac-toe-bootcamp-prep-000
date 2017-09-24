@@ -46,5 +46,15 @@ class TicTacToe
       false
     end
   end
-  
+
+  def turn_count
+    turns = 0
+    board.each do |token|
+      if token != "" && token != " " && token != nil
+        turns += 1
+      end
+    end
+    turns
+  end
+
 end
