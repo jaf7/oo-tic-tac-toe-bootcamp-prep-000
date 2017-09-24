@@ -105,4 +105,14 @@ class TicTacToe
     end
   end
 
+  def over?
+    if draw?
+      true
+    elsif won?
+      true
+    else
+      false
+    end
+  end
+  
 end
