@@ -120,4 +120,16 @@ class TicTacToe
     win_combo ? @board[win_combo[0]] : nil
   end
 
+  def play(board)
+    until over?
+      turn
+    end
+    if !!won?
+      char = winner
+      puts "Congratulations #{char}!"
+    else
+      puts "Cat's Game!"
+    end
+  end
+
 end
