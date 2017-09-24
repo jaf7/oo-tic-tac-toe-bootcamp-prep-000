@@ -35,4 +35,16 @@ class TicTacToe
     !(@board[index].nil? || @board[index] == " ") # NilClass public instance method, nil? -> true
   end
 
+  def valid_move?(index)
+    if !position_taken?(index)
+      if index.between?(0,8)
+        true
+      else
+        false
+      end
+    else
+      false
+    end
+  end
+  
 end
