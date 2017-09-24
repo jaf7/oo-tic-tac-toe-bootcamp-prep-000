@@ -57,4 +57,10 @@ class TicTacToe
     turns
   end
 
+  def current_player
+    turns = turn_count # self.turn_count ?
+    turns % 2 == 0 ? player = "X" : player = "O"
+    player
+  end
+
 end
