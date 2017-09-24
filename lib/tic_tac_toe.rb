@@ -90,4 +90,11 @@ class TicTacToe
     false
   end
 
+  def full?
+    @board.each_index do |i|
+      return false if !position_taken?(i)
+    end
+    true
+  end
+  
 end
