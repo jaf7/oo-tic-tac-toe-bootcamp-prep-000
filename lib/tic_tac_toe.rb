@@ -15,11 +15,10 @@ class TicTacToe
   ]
 
   def display_board
-    horiz = "-----------"
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
-    puts "#{horiz}"
+    puts "-----------"
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
-    puts "#{horiz}"
+    puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
